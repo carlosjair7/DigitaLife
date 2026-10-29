@@ -1,0 +1,32 @@
+  
+/* Animación de botones y campos */
+.btn:hover {
+    background-color: #1b3d32 !important;
+    transform: scale(1.05);
+}
+.form-control:focus {
+    border-color: #2e524d;
+    box-shadow: 0 0 0 0.2rem rgba(46, 82, 77, 0.25);
+}
+
+.card {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.invalid-feedback {
+    font-size: 0.9rem;
+    color: #e74c3c;
+}
+
+

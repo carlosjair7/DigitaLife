@@ -1,0 +1,38 @@
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+.env
+.env.*
+!.env.example
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+/.vscode
+
+# Logs
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Certificados y llaves (por si el broker usa TLS)
+*.pem
+*.key
+*.crt
+*.p12
+
+# Respaldos o exportaciones de la base de datos
+*.sql
+*.dump
+*.bak

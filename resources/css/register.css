@@ -1,0 +1,81 @@
+
+
+/* Fondo de la tarjeta con borde */
+.card {
+    background: white;
+    border-radius: 20px;
+    border: 3px solid #2e524d; /* Color de borde verde oscuro */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efectos en los campos de entrada */
+.form-control {
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 1.1rem;
+    background: #fff;
+    border: 2px solid #2e524d; /* Borde verde oscuro */
+    transition: all 0.3s ease;
+}
+
+/* Estilo cuando el campo está enfocado */
+.form-control:focus {
+    border-color: #2e524d;
+    box-shadow: 0 0 10px rgba(46, 82, 77, 0.6);
+}
+
+/* Estilos del botón */
+.btn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: #2e524d;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Botón en hover */
+.btn:hover {
+    background-color: #3b6e65;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del encabezado de la tarjeta */
+.card-header {
+    background-color: #2e524d;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Estilo del formulario */
+.card-body {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Efecto de error en campos de entrada */
+.invalid-feedback {
+    font-size: 0.9rem;
+    color: #e74c3c;
+    display: block;
+}
